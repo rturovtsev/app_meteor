@@ -1,14 +1,7 @@
 <template name="register">
-    <form>
-        <label>
-            Email: <input type="email" name="registerEmail">
-		</label>
-        <br>
-        <label>
-			Пароль: <input type="password" name="registerPassword">
-		</label>
-        <br>
+	{{> yield "header"}}
 
-        <button type="submit">Зарегистрироваться</button>
-    </form>
+	{{> yield}}
+
+	{{> yield "footer"}}
 </template>

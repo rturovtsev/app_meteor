@@ -1,3 +1,7 @@
-<template name="home">
-	{{> header}}
+<template name="index">
+	{{> yield region="header"}}
+		
+	{{> yield}}
+
+	{{> yield region="footer"}}
 </template>
